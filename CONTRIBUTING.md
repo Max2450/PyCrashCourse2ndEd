@@ -1,0 +1,1 @@
+This is just me working through some practice material and getting familiar with GitHub. Code contributions will probably not be implemented, but please feel free to comment/discuss/reach out if you have questions or suggestions. 
