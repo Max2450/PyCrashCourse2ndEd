@@ -1,6 +1,6 @@
 choice = -1
 while choice != 0:
-    choice = int(input("Please choose which Chapter 5 Exercise to view. Enter 1-8 or 0 to exit: "))
+    choice = int(input("Please choose which Chapter 5 Exercise to view. Enter 1-11 or 0 to exit: "))
 
     # pg. 78 5-1
     if choice == 1:
@@ -71,4 +71,42 @@ while choice != 0:
             print("Apples are so good!")
 
     elif choice == 8:
-        print("Left off around pg. 86")
+        usernames = ["admin", "sarah", "scruffy", "david", "lemonlime123"]
+        for username in usernames:
+            if username == "admin":
+                print(f"Hello {username}, would you like to see a status report?")
+            else:
+                print(f"Hello {username}, nice to see you again!")
+
+    elif choice == 9:
+        usernames = ["admin", "sarah", "scruffy", "david", "lemonlime123"]
+        usernames.clear()
+        if len(usernames) < 1 or usernames is False:
+            print("We need to find some users!")
+        else:
+            print(usernames)
+
+    elif choice == 10:
+        current_users = ["admin", "sarah", "scruffy", "david", "lemonlime123"]
+        # use list comprehension to create lowercase version of current_users
+        current_users_standardized = [current_user.lower() for current_user in current_users]
+        new_users = ["SCRUFFY", "lemonlime123", "carrotguy23", "alice", "dingus"]
+        for new_user in new_users:
+            if new_user.lower() in current_users_standardized:
+                print("That name is already in use!")
+            else:
+                print("That name is available.")
+
+    elif choice == 11:
+        nums = range(1, 25)
+        for num in nums:
+            if num % 10 == 1 and num != 11:
+                print(f"{num}st")
+            elif num % 10 == 2 and num != 12:
+                print(f"{num}nd")
+            elif num % 10 == 3 and num != 13:
+                print(f"{num}rd")
+            else:
+                print(f"{num}th")
+
+print("Done with Chapter 5!")
