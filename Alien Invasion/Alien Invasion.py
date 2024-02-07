@@ -21,7 +21,7 @@ class AlienInvasion:
         self.ship = Ship(self)
 
         # Set the background color (now in settings)
-        #self.bg_color = (230, 230, 230)
+        # self.bg_color = (230, 230, 230)
 
     def run_game(self):
         # start loop for the game
