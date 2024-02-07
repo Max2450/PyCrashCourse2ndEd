@@ -109,4 +109,4 @@ while choice != 0:
             else:
                 print(f"{num}th")
 
-print("Done with Chapter 5!")
+print("Done with Chapter 5! ")
