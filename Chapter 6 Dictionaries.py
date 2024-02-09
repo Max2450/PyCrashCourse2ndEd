@@ -1,6 +1,7 @@
 choice = -1
 while choice != 0:
-    choice = int(input("\nPlease choose which Chapter 6 Exercise to view. Enter 1-7 or 0 to exit: "))
+    choice = int(input("\nPlease choose which Chapter 6 Exercise to view. "
+                       "Enter 1-12 or 0 to exit: "))
 
     # pg. 99 6-1
     if choice == 1:
@@ -26,7 +27,7 @@ while choice != 0:
             "if": "A conditional statement used to execute code only if a certain condition is met.",
             "list": "A data structure used to store an ordered series of items.",
             "dict": "A data structure used to store binary sets of related information about an object.",
-                    }
+        }
         for key, value in glossary.items():
             print(f"{key.title()}: {value} \n")
 
@@ -61,6 +62,75 @@ while choice != 0:
                 print(f"Please take the survey, {name}")
 
     elif choice == 7:
-        print("TODO")
+        Batman = {"first_name": "Terry", "last_name": "McGinnis", "age": "20", "city": "Gotham"}
+        Superman = {"first_name": "Clark", "last_name": "Kent", "age": "40", "city": "Metropolis"}
+        Shrek = {"first_name": "Shrek", "last_name": "Evergreen", "age": "300", "city": "Swamp"}
+        people = [Batman, Superman, Shrek]
+        for person in people:
+            username = (person['first_name'] + ' ' + person['last_name']).strip()
+            print(username)
+            for key, value in person.items():
+                print(f"\t{key}: {value}")
+
+    elif choice == 8:
+        gizmo = {"name": "Gizmo", "type": "dog", "owner": "me"}
+        neko = {"name": "Neko", "type": "gecko", "owner": "me"}
+        chuck = {"name": "Chuck", "type": "cat", "owner": "Caroline"}
+        pets = [gizmo, neko, chuck]
+        for pet in pets:
+            print(pet["name"])
+            for key, value in pet.items():
+                print(f"\t{key}: {value}")
+
+    elif choice == 9:
+        favorite_places = {
+            "me": ["Norway", "Ireland", "Seattle"],
+            "C": ["Paris", "Seattle"],
+            "Neko": ["Home", "Hide", "Alone"],
+        }
+        for name, places in favorite_places.items():
+            print(f"{name}'s favorite places are: ")
+            for place in places:
+                print(f"\t{place}")
+
+    elif choice == 10:
+        # modify 6-2 to accept multiple numbers for each person
+        favorite_nums = {
+            "Sarah": [7, 13, 42],
+            "Jack": [99, 999, 9999],
+            "Elmo": [1, 2, 3, 4, 5],
+            "Max": [12345, 12, 34, 5],
+            "Scrungus": [69, 420, 42069],
+        }
+        for name, nums in favorite_nums.items():
+            print(f"{name}'s favorite numbers are: ")
+            for num in nums:
+                print(f"\t{num}")
+
+    elif choice == 11:
+        cities = {
+            "Seattle": {
+                "country": "United States",
+                "population": 733919,
+                "fact": "Located on the Puget Sound"
+            },
+            "Oslo": {
+                "country": "Norway",
+                "population": 634293,
+                "fact": "Located in the south of Norway"
+            },
+            "Paris": {
+                "country": "France",
+                "population": 2161000,
+                "fact": "Language spoken is French"
+            }
+        }
+        for city, info in cities.items():
+            print(f"{city}: ")
+            for key, value in info.items():
+                print(f"\t{key}: {value}")
+
+    elif choice == 12:
+        print("Already refactored some of the exercises.")
 
 print("Done with Chapter 6! ")
