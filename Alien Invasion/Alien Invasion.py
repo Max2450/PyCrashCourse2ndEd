@@ -18,7 +18,7 @@ class AlienInvasion:
 
         # first screen - windowed mode
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
-        # fullscreen mode
+        # full screen mode
         # self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         # self.settings.screen_width = self.screen.get_rect().width
         # self.settings.screen_height = self.screen.get_rect().height
@@ -77,7 +77,7 @@ class AlienInvasion:
     def _update_bullets(self):
         self.bullets.update()
 
-        # get rid of offscreen bullets
+        # get rid of off-screen bullets
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
