@@ -23,6 +23,35 @@ while choice != 0:
             print(f"{num} is NOT a multiple of 10.")
 
     elif choice == 4:
-        # TODO
+        topping = ""
+        while topping != "quit":
+            topping = input("Enter a pizza topping or type 'quit' to exit: ")
+            if topping != "quit":
+                print(f"Adding {topping} to the pizza...")
+
+    elif choice == 5:
+        age = 1
+        price = 0
+        while age >= 0:
+            age = int(input("Please enter your age or -1 to exit: "))
+            if age < 3:
+                print(f"Your ticket price is ${price}.")
+            elif age <= 12:
+                price = 10
+                print(f"Your ticket price is ${price}.")
+            else:
+                price = 15
+                print(f"Your ticket price is ${price}.")
+
+    elif choice == 6:
+        print("You can exit while loops using conditionals, active variables, or a break "
+              "statement on specific user input.")
+
+    elif choice == 7:
+        while True:
+            print("This is an infinite loop. Press ctrl + c to exit!")
+
+    elif choice == 8:
+        print("Working on this next!")
 
 print("Done with Chapter 7! ")
