@@ -13,6 +13,7 @@ from alien import Alien
 
 # project 1
 
+
 class AlienInvasion:
     # class to manage game
 
