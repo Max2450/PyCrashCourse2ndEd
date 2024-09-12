@@ -52,6 +52,19 @@ while choice != 0:
             print("This is an infinite loop. Press ctrl + c to exit!")
 
     elif choice == 8:
-        print("Working on this next!")
+        #start with list of orders and an empty list of finished sammies
+        sandwich_orders = ['reuben', 'pb&j', 'ham', 'turkey', 'veggie', 'deviled egg']
+        finished_sandwiches = []
+        #while loops used when modifying a list inside the loop
+        while sandwich_orders:
+            #pop current order from end of order list, print that we're making it
+            current_order = sandwich_orders.pop()
+            print(f"Making your {current_order}")
+            #add sammy to finished sammies list
+            finished_sandwiches.append(current_order)
+        #print both lists to be sure all sammies are finished and no incomplete orders remain.
+        print(sandwich_orders)
+        print(finished_sandwiches)
+
 
 print("Done with Chapter 7! ")
