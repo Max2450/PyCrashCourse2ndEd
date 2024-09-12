@@ -66,5 +66,43 @@ while choice != 0:
         print(sandwich_orders)
         print(finished_sandwiches)
 
+    elif choice == 9:
+        sandwich_orders = ['reuben', 'pastrami', 'pb&j', 'pastrami', 'ham', 'turkey', 'pastrami', 'veggie', 'deviled egg']
+        finished_sandwiches = []
+
+        #cancel all pastrami orders!
+        print("Cripes, we're out of pastrami! 86 those orders!")
+        while('pastrami' in sandwich_orders):
+            sandwich_orders.remove('pastrami')
+
+        # while loops used when modifying a list inside the loop
+        while sandwich_orders:
+            # pop current order from end of order list, print that we're making it
+            current_order = sandwich_orders.pop()
+            print(f"Making your {current_order}")
+            # add sammy to finished sammies list
+            finished_sandwiches.append(current_order)
+
+        # print both lists to be sure all sammies are finished and no incomplete orders remain.
+        print(sandwich_orders)
+        print(finished_sandwiches)
+
+    elif choice == 10:
+        responses = {}
+        polling_active = True
+
+        while polling_active:
+            name = input("What is your name? ")
+            response = input("What is your dream vacation destination? ")
+
+            responses[name] = response
+
+            repeat = input("Is there another person in line? (yes/no) ")
+            if repeat == "no":
+                polling_active = False
+
+        print("\n--- Poll Results ---")
+        for name,response in responses.items():
+            print(f"{name} dreams of {response}...")
 
 print("Done with Chapter 7! ")
