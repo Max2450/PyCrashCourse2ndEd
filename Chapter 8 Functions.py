@@ -49,39 +49,45 @@ while choice != 0:
         describe_city("Kuala Lumpur", "Malaysia")
 
     elif choice == 6:
-        #TODO
+        def city_country(city_name, country_name):
+            formatted_city_country = f"{city_name.strip()}, {country_name.strip()}"
+            print(formatted_city_country.title())
+            return formatted_city_country.title()
+        city_country("santiago","chile")
+        city_country("rio de janeiro", "Brazil")
+        city_country("Ottowa", "canada")
 
     elif choice == 7:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 8:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 9:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 10:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 11:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 12:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 13:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 14:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 15:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 16:
-        # TODO
+        print("Not done yet!")
 
     elif choice == 17:
-        # TODO
+        print("Not done yet!")
 
 print("Done with Chapter 8! ")
