@@ -74,8 +74,19 @@ while choice != 0:
         Undertow = make_album('Tool', 'Undertow')
         print(Undertow)
 
-
     elif choice == 8:
+        input8=-1
+        def make_album(artist_name, album_title, num_songs = None):
+            """"build dict describing a music album"""
+            if num_songs:
+                album = {'artist': artist_name, 'title': album_title, 'song_count': num_songs}
+            else:
+                album = {'artist': artist_name, 'title': album_title}
+            return album
+        while(input8 != 0):
+            artist = input("Type the artist's name: ")
+            title = input("Type the album's title: ")
+            song_count = input("(Optional) How many songs are in that album? ")
         print("Not done yet!")
 
     elif choice == 9:
