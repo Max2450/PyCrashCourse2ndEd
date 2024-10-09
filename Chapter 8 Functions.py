@@ -1,3 +1,5 @@
+from typing import Never
+
 choice = -1
 while choice != 0:
     choice = int(input("Please choose which Chapter 8 Exercise to view. "
@@ -58,7 +60,20 @@ while choice != 0:
         city_country("Ottowa", "canada")
 
     elif choice == 7:
-        print("Not done yet!")
+        def make_album(artist_name, album_title, num_songs = None):
+            """"build dict describing a music album"""
+            if num_songs:
+                album = {'artist': artist_name, 'title': album_title, 'song_count': num_songs}
+            else:
+                album = {'artist': artist_name, 'title': album_title}
+            return album
+        Leviathan = make_album('Mastodon', 'Leviathan', 10)
+        print(Leviathan)
+        Nevermind = make_album('Nirvana', 'Nevermind', 13)
+        print(Nevermind)
+        Undertow = make_album('Tool', 'Undertow')
+        print(Undertow)
+
 
     elif choice == 8:
         print("Not done yet!")
