@@ -1,4 +1,4 @@
-from typing import Never
+#from typing import Never
 
 choice = -1
 while choice != 0:
@@ -75,7 +75,6 @@ while choice != 0:
         print(Undertow)
 
     elif choice == 8:
-        input8=-1
         def make_album(artist_name, album_title, num_songs = None):
             """"build dict describing a music album"""
             if num_songs:
@@ -83,11 +82,17 @@ while choice != 0:
             else:
                 album = {'artist': artist_name, 'title': album_title}
             return album
-        while(input8 != 0):
+
+        #initialize while variable, set exit condition, collect info and make albums
+        input8 = -1
+        while input8 != 'q':
             artist = input("Type the artist's name: ")
-            title = input("Type the album's title: ")
+            a_title = input("Type the album's title: ")
             song_count = input("(Optional) How many songs are in that album? ")
-        print("Not done yet!")
+            print(make_album(artist,a_title,song_count))
+            input8 = input("Press 'q' to exit or anything else to make another album. ")
+        #print exit message
+        print("Nice collection!")
 
     elif choice == 9:
         print("Not done yet!")
