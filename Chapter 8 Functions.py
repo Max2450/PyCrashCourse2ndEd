@@ -90,18 +90,43 @@ while choice != 0:
             a_title = input("Type the album's title: ")
             song_count = input("(Optional) How many songs are in that album? ")
             print(make_album(artist,a_title,song_count))
-            input8 = input("Press 'q' to exit or anything else to make another album. ")
+            input8 = input("Enter 'q' to exit or anything else to make another album. ")
         #print exit message
         print("Nice collection!")
 
     elif choice == 9:
-        print("Not done yet!")
+        messages = ["Hiya!", "Cool!", "Next stop, Capitol Hill", "This song rules!"]
+        def show_messages(message_list):
+            for message in message_list:
+                print(message)
+        show_messages(messages)
 
     elif choice == 10:
-        print("Not done yet!")
+        messages = ["Hiya!", "Cool!", "Next stop, Capitol Hill", "This song rules!"]
+        sent_messages = []
+        def send_messages(message_list):
+            while(message_list):
+                current_message = message_list.pop()
+                print(current_message)
+                sent_messages.append(current_message)
+
+        send_messages(messages)
+        print(messages)
+        print(sent_messages)
 
     elif choice == 11:
-        print("Not done yet!")
+        messages = ["Hiya!", "Cool!", "Next stop, Capitol Hill", "This song rules!"]
+        sent_messages = []
+
+        def send_messages(message_list):
+            while (message_list):
+                current_message = message_list.pop()
+                print(current_message)
+                sent_messages.append(current_message)
+
+        send_messages(messages[:])
+        print(messages)
+        print(sent_messages)
 
     elif choice == 12:
         print("Not done yet!")
