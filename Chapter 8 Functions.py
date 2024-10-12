@@ -129,13 +129,31 @@ while choice != 0:
         print(sent_messages)
 
     elif choice == 12:
-        print("Not done yet!")
+        def make_sandwich(*ingredients):
+            print("Making a sandwich with the following ingredients: ")
+            for ingredient in ingredients:
+                print(f"- {ingredient}")
+        make_sandwich("Rye", "Cheddar", "Mustard", "Pepper", "Turkey")
+        make_sandwich("Sourdough", "Cheese Blend")
+        make_sandwich("Whole", "Smooth PB", "Grape Jelly")
 
     elif choice == 13:
-        print("Not done yet!")
+        def build_profile(first, last, **user_info):
+            user_info['first_name'] = first
+            user_info['last_name'] = last
+            return user_info
+
+        user_profile = build_profile('Max', 'G', location='WA, USA', pet='Crested Gecko', school='WGU')
+        print(user_profile)
 
     elif choice == 14:
-        print("Not done yet!")
+        def build_car(manufacturer, model, **car_info):
+            car_info['manufacturer'] = manufacturer
+            car_info['model'] = model
+            return car_info
+
+        car = build_car("Saturn", "L300", color="Green", engine="V6", doors=4)
+        print(car)
 
     elif choice == 15:
         print("Not done yet!")
