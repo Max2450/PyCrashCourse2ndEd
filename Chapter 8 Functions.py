@@ -1,4 +1,5 @@
 #from typing import Never
+import printing_functions as pf
 
 choice = -1
 while choice != 0:
@@ -162,13 +163,19 @@ while choice != 0:
         print(car)
 
     elif choice == 15:
-
-        print("Not done yet!")
+        """import printing_functions file and use it print_models"""
+        toys = ['car', 'plane', 'robot']
+        pf.print_models(toys)
 
     elif choice == 16:
-        print("Not done yet!")
+        print("Imports can be made using the following methods: ")
+        print("-import module_name")
+        print("-from module_name import function_name")
+        print("-from module_name import function_name as fn")
+        print("-import module_name as mn")
+        print("-from module_name import *")
 
     elif choice == 17:
-        print("Not done yet!")
+        print("The PEP-8 Style Guidelines should be followed for easily read and maintained code!")
 
 print("Done with Chapter 8! ")
