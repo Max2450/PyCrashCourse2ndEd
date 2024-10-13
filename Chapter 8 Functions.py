@@ -95,6 +95,7 @@ while choice != 0:
         print("Nice collection!")
 
     elif choice == 9:
+        """Pass a list of messages to a function that prints each message in the list."""
         messages = ["Hiya!", "Cool!", "Next stop, Capitol Hill", "This song rules!"]
         def show_messages(message_list):
             for message in message_list:
@@ -102,6 +103,7 @@ while choice != 0:
         show_messages(messages)
 
     elif choice == 10:
+        """Pass a list of messages to a function that prints each message and moves it to another list."""
         messages = ["Hiya!", "Cool!", "Next stop, Capitol Hill", "This song rules!"]
         sent_messages = []
         def send_messages(message_list):
@@ -115,6 +117,7 @@ while choice != 0:
         print(sent_messages)
 
     elif choice == 11:
+        """Pass a list of messages to a function that uses a copy of the list to print each message and move it to a sent messages list"""
         messages = ["Hiya!", "Cool!", "Next stop, Capitol Hill", "This song rules!"]
         sent_messages = []
 
@@ -129,6 +132,7 @@ while choice != 0:
         print(sent_messages)
 
     elif choice == 12:
+        """Accept a list of ingredients X items long, print a summary of the sandwich."""
         def make_sandwich(*ingredients):
             print("Making a sandwich with the following ingredients: ")
             for ingredient in ingredients:
@@ -138,6 +142,7 @@ while choice != 0:
         make_sandwich("Whole", "Smooth PB", "Grape Jelly")
 
     elif choice == 13:
+        """Build a profile of a user with first name, last name, and X additional keyword pairs of information."""
         def build_profile(first, last, **user_info):
             user_info['first_name'] = first
             user_info['last_name'] = last
@@ -147,6 +152,7 @@ while choice != 0:
         print(user_profile)
 
     elif choice == 14:
+        """Build a profile of a car, accepting make, model, and an arbitrary number of keyword pairs of info."""
         def build_car(manufacturer, model, **car_info):
             car_info['manufacturer'] = manufacturer
             car_info['model'] = model
@@ -156,6 +162,7 @@ while choice != 0:
         print(car)
 
     elif choice == 15:
+
         print("Not done yet!")
 
     elif choice == 16:
