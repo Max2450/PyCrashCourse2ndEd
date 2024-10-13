@@ -1,3 +1,5 @@
+import restaurant as r
+
 choice = -1
 while choice != 0:
     choice = int(input("Please choose which Chapter 9 Exercise to view. "
@@ -5,29 +7,13 @@ while choice != 0:
 
     # 9-1 (using ebook, not sure the page numbers anymore)
     if choice == 1:
-        class Restaurant:
-            """A class for modeling restaurants."""
-
-            def __init__(self, name, cuisine):
-                """Initialize a restaurant, saving the name and cuisine."""
-                self.restaurant_name = name
-                self.cuisine_type = cuisine
-
-            def describe_restaurant(self):
-                """Describe a restaurant using the name and cuisine type."""
-                print(f"{self.restaurant_name} is a {self.cuisine_type} restaurant.")
-
-            def open_restaurant(self):
-                """Open the restaurant."""
-                print(f"{self.restaurant_name} is now open!")
-
-        ladro = Restaurant("Ladro", "Coffee")
+        ladro = r.Restaurant("Ladro", "Coffee")
         print(f"Name: {ladro.restaurant_name} ")
         print(f"Cuisine: {ladro.cuisine_type}")
         ladro.describe_restaurant()
         ladro.open_restaurant()
 
-        shakeshack = Restaurant("Shake Shack", "Burger")
+        shakeshack = r.Restaurant("Shake Shack", "Burger")
         print(f"Name: {shakeshack.restaurant_name} ")
         print(f"Cuisine: {shakeshack.cuisine_type}")
         shakeshack.describe_restaurant()
