@@ -19,6 +19,17 @@ while choice != 0:
         shakeshack.describe_restaurant()
         shakeshack.open_restaurant()
 
+    elif choice == 2:
+        """Create 3 instances of restaurants and describe them."""
+        dosamigos = r.Restaurant("Dos Amigos", "Mexican")
+        r.Restaurant.describe_restaurant(dosamigos)
+
+        lesincompetents = r.Restaurant("Les Incompetents", "French")
+        r.Restaurant.describe_restaurant(lesincompetents)
+
+        forage = r.Restaurant("Forage", "Vegan")
+        r.Restaurant.describe_restaurant(forage)
+
     elif choice == 3:
         print("In Progress...")
 
