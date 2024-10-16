@@ -1,4 +1,5 @@
 import restaurant as r
+import user as u
 
 choice = -1
 while choice != 0:
@@ -31,7 +32,11 @@ while choice != 0:
         r.Restaurant.describe_restaurant(forage)
 
     elif choice == 3:
-        print("In Progress...")
+        """Create some instances of users and call the describe and greet methods for each."""
+        Bill = u.User("Bill", "Smith", 42,
+                      "bill@notmyemail.com", "hashed string", "pic here")
+        u.User.describe_user(Bill)
+        u.User.greet_user(Bill)
 
     elif choice == 4:
         print("In Progress...")
