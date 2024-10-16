@@ -1,5 +1,6 @@
 import restaurant as r
-import user as u
+#import user as u / imports whole module with alias
+from user import User as u #imports User class with alias from module
 
 choice = -1
 while choice != 0:
@@ -33,10 +34,10 @@ while choice != 0:
 
     elif choice == 3:
         """Create some instances of users and call the describe and greet methods for each."""
-        Bill = u.User("Bill", "Smith", 42,
+        Bill = u("Bill", "Smith", 42,
                       "bill@notmyemail.com", "hashed string", "pic here")
-        u.User.describe_user(Bill)
-        u.User.greet_user(Bill)
+        u.describe_user(Bill)
+        u.greet_user(Bill)
 
     elif choice == 4:
         print("In Progress...")

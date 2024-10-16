@@ -163,14 +163,17 @@ while choice != 0:
         print(car)
 
     elif choice == 15:
-        """import printing_functions file and use it print_models"""
+        """import printing_functions file and use it to print_models"""
         toys = ['car', 'plane', 'robot']
         pf.print_models(toys)
 
     elif choice == 16:
         print("Imports can be made using the following methods: ")
         print("-import module_name")
+
         print("-from module_name import function_name")
+        # can import multiple with comma separation, also doesn't need dot notation
+
         print("-from module_name import function_name as fn")
         print("-import module_name as mn")
         print("-from module_name import *")
