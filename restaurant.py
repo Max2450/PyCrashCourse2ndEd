@@ -23,3 +23,6 @@ class Restaurant:
             self.number_served += more_served
         else:
             print(f"We can't serve less than 1 person!")
+
+class IceCreamShop(Restaurant):
+    """Represent specific attributes of an IceCreamShop"""
