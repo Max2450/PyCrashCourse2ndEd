@@ -51,7 +51,13 @@ while choice != 0:
         print(f"{Chipotle.restaurant_name} has served {Chipotle.number_served} customers. ")
 
     elif choice == 5:
-        print("In Progress...")
+        Alice = u("Alice", "Flanagan", 32, "alicef@notreal.com",
+          "sosecure", "birthday_2023.jpg")
+        u.increment_login_attempts(Alice)
+        u.increment_login_attempts(Alice)
+        print(f"{Alice.first_name} has attempted to login {Alice.login_attempts} times. ")
+        Alice.reset_login_attempts()
+        print(f"{Alice.first_name} has attempted to login {Alice.login_attempts} times. ")
 
     elif choice == 6:
         print("In Progress...")

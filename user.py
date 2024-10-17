@@ -8,6 +8,7 @@ class User:
         self.email = email
         self.password = password
         self.pic = pic
+        self.login_attempts = 0
 
     def describe_user(self):
         print(f"This user's information is as follows: "
@@ -15,3 +16,9 @@ class User:
 
     def greet_user(self):
         print(f"Hello there {self.first_name}! ")
+
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        self.login_attempts = 0
