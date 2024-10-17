@@ -40,7 +40,15 @@ while choice != 0:
         u.greet_user(Bill)
 
     elif choice == 4:
-        print("In Progress...")
+        """Adding number_served and related functions to restaurant.py"""
+        Chipotle = r.Restaurant("Chipotle", "Fast Food")
+        print(f"{Chipotle.restaurant_name} has served {Chipotle.number_served} customers. ")
+        Chipotle.number_served = 500
+        print(f"{Chipotle.restaurant_name} has served {Chipotle.number_served} customers. ")
+        Chipotle.set_number_served(800)
+        print(f"{Chipotle.restaurant_name} has served {Chipotle.number_served} customers. ")
+        Chipotle.increment_number_served(400)
+        print(f"{Chipotle.restaurant_name} has served {Chipotle.number_served} customers. ")
 
     elif choice == 5:
         print("In Progress...")
