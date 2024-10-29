@@ -26,3 +26,9 @@ class Restaurant:
 
 class IceCreamShop(Restaurant):
     """Represent specific attributes of an IceCreamShop"""
+
+    def __init__(self, *flavors):
+        self.flavor_list = flavors
+
+    def display_flavors(self):
+        print(f"This shop has the following flavors: {self.flavor_list}")

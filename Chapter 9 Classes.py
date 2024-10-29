@@ -60,7 +60,9 @@ while choice != 0:
         print(f"{Alice.first_name} has attempted to login {Alice.login_attempts} times. ")
 
     elif choice == 6:
-        print("In Progress...")
+        """Create an instance of an ice cream shop and display its flavors"""
+        Frilk = r.IceCreamShop("chocolate", "vanilla", "strawberry")
+        Frilk.display_flavors()
 
     elif choice == 7:
         print("In Progress...")
