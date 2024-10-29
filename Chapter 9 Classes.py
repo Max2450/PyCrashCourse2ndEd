@@ -1,6 +1,7 @@
 import restaurant as r
 #import user as u / imports whole module with alias
 from user import User as u #imports User class with alias from module
+from user import Admin as a
 
 choice = -1
 while choice != 0:
@@ -60,12 +61,14 @@ while choice != 0:
         print(f"{Alice.first_name} has attempted to login {Alice.login_attempts} times. ")
 
     elif choice == 6:
-        """Create an instance of an ice cream shop and display its flavors"""
+        """Create an instance of an ice cream shop (subclass of Restaurant) and display its flavors"""
         Frilk = r.IceCreamShop("chocolate", "vanilla", "strawberry")
         Frilk.display_flavors()
 
     elif choice == 7:
-        print("In Progress...")
+        """Create an instance of an Admin and list its privileges."""
+        MattBerry = a("Can edit posts.", "Can delete posts.", "Can ban users.")
+        MattBerry.show_privileges()
 
     elif choice == 8:
         print("In Progress...")

@@ -22,3 +22,12 @@ class User:
 
     def reset_login_attempts(self):
         self.login_attempts = 0
+
+class Admin (User):
+    """Model Admins as a subclass of users with additional privileges"""
+
+    def __init__(self, *privileges):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print(f"This Admin's privileges are: {self.privileges}.")
