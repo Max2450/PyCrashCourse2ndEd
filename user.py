@@ -31,3 +31,18 @@ class Admin (User):
 
     def show_privileges(self):
         print(f"This Admin's privileges are: {self.privileges}.")
+
+class Admin2(User):
+    """Model an Admin with privileges as a separate class for 9-8"""
+
+    def __init__(self, *privileges):
+        self.privileges = Privileges()
+
+class Privileges():
+    """Alternate way to handle privileges outside of the user class for 9-8"""
+
+    def __init__(self, *privileges):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print(f"Using a Privileges instance as an attribute of Admin2, this user's privileges are: {self.privileges}")

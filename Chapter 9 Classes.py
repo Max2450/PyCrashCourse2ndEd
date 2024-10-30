@@ -2,6 +2,8 @@ import restaurant as r
 #import user as u / imports whole module with alias
 from user import User as u #imports User class with alias from module
 from user import Admin as a
+from user import Admin2 as a2
+from user import Privileges as p
 
 choice = -1
 while choice != 0:
@@ -71,6 +73,9 @@ while choice != 0:
         MattBerry.show_privileges()
 
     elif choice == 8:
+        """Create an instance of an Admin2 and list its privileges."""
+        Laszlo = a2("Can do even more stuff!", "Like shadowban users.")
+
         print("In Progress...")
 
     elif choice == 9:
