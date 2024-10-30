@@ -36,10 +36,10 @@ class Admin2(User):
     """Model an Admin with privileges as a separate class for 9-8"""
 
     def __init__(self, *privileges):
-        self.privileges = Privileges()
+        self.privileges = Privileges("Can do even more stuff!", "Like shadowban users.")
 
 class Privileges():
-    """Alternate way to handle privileges outside of the user class for 9-8"""
+    """Alternate way to handle privileges outside the user class for 9-8"""
 
     def __init__(self, *privileges):
         self.privileges = privileges

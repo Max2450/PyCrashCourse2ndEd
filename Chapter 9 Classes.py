@@ -74,9 +74,8 @@ while choice != 0:
 
     elif choice == 8:
         """Create an instance of an Admin2 and list its privileges."""
-        Laszlo = a2("Can do even more stuff!", "Like shadowban users.")
-
-        print("In Progress...")
+        Laszlo = a2()
+        Laszlo.privileges.show_privileges()
 
     elif choice == 9:
         print("In Progress...")
