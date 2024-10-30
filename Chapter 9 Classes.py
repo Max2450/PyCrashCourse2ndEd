@@ -78,7 +78,7 @@ while choice != 0:
         Laszlo.privileges.show_privileges()
 
     elif choice == 9:
-        print("In Progress...")
+        print("Just copied electriccar.py, now need to implement upgrade battery method. ")
 
     elif choice == 10:
         print("In Progress...")
