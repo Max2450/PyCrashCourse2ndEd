@@ -1,3 +1,5 @@
+"""A set of classes used to represent gas and electric cars. """
+
 class Car:
     """Copied from Chapter 9 to complete 9-9"""
 

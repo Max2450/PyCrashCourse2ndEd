@@ -79,7 +79,7 @@ while choice != 0:
         Laszlo.privileges.show_privileges()
 
     elif choice == 9:
-        """reate an instance of an electric car, list battery range, upgrade battery, then list range again. """
+        """Create an instance of an electric car, list battery range, upgrade battery, then list range again. """
         my_car = ec.ElectricCar("Volvo", "EC900", "2018")
         my_car.battery.get_range()
         my_car.battery.upgrade_battery()
