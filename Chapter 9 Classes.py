@@ -6,6 +6,7 @@ from user import Admin2 as a2
 from user import Privileges as p
 import electric_car as ec
 import Die as d
+import random as rand
 
 choice = -1
 while choice != 0:
@@ -110,10 +111,27 @@ while choice != 0:
         d20.roll_die(10)
 
     elif choice == 14:
-        print("In Progress...")
+        my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "a", "b", "c", "d", "e"]
+        win1 = rand.choice(my_list)
+        win2 = rand.choice(my_list)
+        win3 = rand.choice(my_list)
+        win4 = rand.choice(my_list)
+        winning_ticket = f"{win1}{win2}{win3}{win4}"
+        print(f"The winning ticket is: {winning_ticket}!")
 
     elif choice == 15:
-        print("In Progress...")
+        my_ticket = "a12b"
+        winning_ticket = "ffff"
+        num_draws = 0
+        while my_ticket != winning_ticket:
+            my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "a", "b", "c", "d", "e"]
+            win1 = rand.choice(my_list)
+            win2 = rand.choice(my_list)
+            win3 = rand.choice(my_list)
+            win4 = rand.choice(my_list)
+            winning_ticket = f"{win1}{win2}{win3}{win4}"
+            num_draws += 1
+        print(f"It took {num_draws} draws to win! ")
 
     elif choice == 16:
         print("In Progress...")
