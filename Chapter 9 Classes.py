@@ -5,6 +5,7 @@ from user import Admin as a
 from user import Admin2 as a2
 from user import Privileges as p
 import electric_car as ec
+import Die as d
 
 choice = -1
 while choice != 0:
@@ -86,16 +87,27 @@ while choice != 0:
         my_car.battery.get_range()
 
     elif choice == 10:
-        print("In Progress...")
+        print("This exercise is to restructure my existing Restaurant class by storing it in a module, "
+              "importing it in a separate file, then making a Restaurant instance and calling the method to ensure it works.")
 
     elif choice == 11:
-        print("In Progress...")
+        print("This exercise is to store User, Privileges, and Admin in one module, "
+              "create a separate file importing them, make an Admin instance, and call show_privileges. ")
 
     elif choice == 12:
-        print("In Progress...")
+        print("This exercise is to store User in one module, store Privileges and Admin in a separate module, "
+              "create an Admin instance, and call show_privileges. ")
 
     elif choice == 13:
-        print("In Progress...")
+        """Use Die class which imports random to roll various dice 10 times each. """
+        d6 = d.Die(6)
+        d6.roll_die(10)
+
+        d10 = d.Die(10)
+        d10.roll_die(10)
+
+        d20 = d.Die(20)
+        d20.roll_die(10)
 
     elif choice == 14:
         print("In Progress...")
