@@ -4,6 +4,7 @@ from user import User as u #imports User class with alias from module
 from user import Admin as a
 from user import Admin2 as a2
 from user import Privileges as p
+import electric_car as ec
 
 choice = -1
 while choice != 0:
@@ -78,7 +79,11 @@ while choice != 0:
         Laszlo.privileges.show_privileges()
 
     elif choice == 9:
-        print("Just copied electriccar.py, now need to implement upgrade battery method. ")
+        """reate an instance of an electric car, list battery range, upgrade battery, then list range again. """
+        my_car = ec.ElectricCar("Volvo", "EC900", "2018")
+        my_car.battery.get_range()
+        my_car.battery.upgrade_battery()
+        my_car.battery.get_range()
 
     elif choice == 10:
         print("In Progress...")

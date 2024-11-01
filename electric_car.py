@@ -2,7 +2,7 @@ class Car:
     """Copied from Chapter 9 to complete 9-9"""
 
     def __init__(self, make, model, year):
-        self.make - make
+        self.make = make
         self.model = model
         self.year = year
         self.odometer_reading = 0
@@ -15,7 +15,7 @@ class Car:
         print(f"This car has {self.odometer_reading} miles on it.")
 
     def update_odometer(self, mileage):
-        if mileage >= self.odometer_reading
+        if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
             print("You can't roll back an odometer!")
@@ -32,6 +32,10 @@ class Battery:
     def describe_battery(self):
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery. ")
+
+    def upgrade_battery(self):
+        if self.battery_size != 100:
+            self.battery_size = 100
 
     def get_range(self):
         """Print a statement about the range of the battery. """
