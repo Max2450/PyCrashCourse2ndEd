@@ -134,6 +134,6 @@ while choice != 0:
         print(f"It took {num_draws} draws to win! ")
 
     elif choice == 16:
-        print("In Progress...")
+        print("I read about Regular Expressions on the Python Module of the Week site! ")
 
 print("Done with Chapter 9! ")
